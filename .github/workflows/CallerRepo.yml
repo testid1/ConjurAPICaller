@@ -11,6 +11,6 @@ jobs:
   trigger-remote:
     uses: testid1/ConjurAPI/.github/workflows/fetchSecretsAPI.yaml@main
     with:
-      secretpath: "data%2Fvault%2Fconjurtest%2Fconjurtest%2Fpassword"
+      secret-path: "data%2Fvault%2Fconjurtest%2Fconjurtest%2Fpassword"
     secrets: 
       CONJUR_API_KEY: ${{ secrets.CONJUR_API_KEY }}
