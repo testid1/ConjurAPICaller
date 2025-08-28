@@ -9,8 +9,8 @@ permissions:
   contents: read
 jobs:
   trigger-remote:
-    uses: testid1/PlatformSingleWL/.github/workflows/SecretRetrieve.yaml@main
+    uses: testid1/.github/workflows/fetchSecretsAPI.yaml@main
     with:
       secretpath: "data%2Fvault%2Fconjurtest%2Fconjurtest%2Fpassword"
-#    secrets: 
-#      CONJUR_API_KEY: ${{ secrets.CONJUR_API_KEY }}
+    secrets: 
+      CONJUR_API_KEY: ${{ secrets.CONJUR_API_KEY }}
